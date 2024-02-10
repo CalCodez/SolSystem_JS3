@@ -10,7 +10,7 @@ export function getPlanetsWithMassValue(data, number) {
 
   data.planets.map(function (planets) {
     if (planets.mass.massValue >= number)
-      return massValue.push(planets.name)
+      massValue.push(planets.name)
   })
   return massValue;
 }

@@ -9,7 +9,7 @@ export function getAsteroidsDiscoveredAfterYear(data, year) {
 
   data.asteroids.map(function (asteroids) {
     if (asteroids.discoveryYear > year)
-      return disYear.push(asteroids.name)
+      disYear.push(asteroids.name)
   })
   return disYear;
 }
