@@ -4,16 +4,11 @@
 // Return example: 42
 
 export function allPlanetsMoonsCount(data) {
-  const moonsTotal = [];
-
-  data.planets.map(function (planets) {
-    if (planets.moonsCount != null)
-      moonsTotal.push(planets.moonsCount)
-  })
-
-  return moonsTotal.reduce(function (acc, val) {
-    return acc + val;
-  }, 0)
+  return data.planets
+    .filter((planets) => (planets.moonsCount != null))
+    .reduce((acc, val) => {
+      return acc + val.moonsCount
+    }, 0)
 }
 
 

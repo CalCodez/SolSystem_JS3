@@ -4,10 +4,10 @@
 // Return example: 234234.234
 
 export function getOrbitalPeriodsSum(data) {
-  const orbitSums = data.asteroids.reduce(function (acc, val) {
+  return data.asteroids.reduce(function (acc, val) {
     return acc + val.orbitalPeriod;
   }, 0);
-  return orbitSums;
+
 }
 
 

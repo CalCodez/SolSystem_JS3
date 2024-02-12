@@ -4,10 +4,10 @@
 // Return example: 132.53
 
 export function getAveragePlanetsTemperature(data) {
-  const avTemp = data.planets.reduce(function (acc, val) {
-    return acc + val.avgTemp
-  }, 0);
-  return avTemp / data.planets.length;
+  return data.planets
+    .reduce((acc, val) => {
+      return acc + val.avgTemp
+    }, 0) / data.planets.length
 }
 
 

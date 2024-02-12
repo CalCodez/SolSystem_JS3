@@ -5,12 +5,10 @@
 
 export function getPlanetsNamesWithMoons(data) {
   return data.planets
-    .filter((planet) => planet.moons > 1)
+    .filter((planet) => planet.moonsCount >= 1)
     .map((planet) => planet.name);
 
-  //return data.asteroids
-  //  .filter((asteroids) => asteroids.discoveryYear >= year)
-  //  .map((asteroids) => asteroids.name);
+
 }
 
 // === TEST YOURSELF ===

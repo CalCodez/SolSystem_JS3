@@ -4,10 +4,8 @@
 // Return example: { key1: value1, key2: value2, ... , keyN: valueN }
 
 export function getEarthData(data) {
-  const planetEarth = data.planets.find(function (planets) {
-    return planets.id == 'earth';
-  })
-  return planetEarth;
+  return data.planets
+    .find((planet) => planet.id == 'earth')
 }
 
 

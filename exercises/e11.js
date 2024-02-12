@@ -5,12 +5,10 @@
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function lowMoonsPlanets(data) {
-  const lessTenMoons = [];
-  data.planets.map(function (planets) {
-    if (planets.moonsCount < 10 || planets.moonsCount == null)
-      lessTenMoons.push(planets.name)
-  })
-  return lessTenMoons;
+  return data.planets
+    .filter((planet) => planet.moonsCount == null || planet.moonsCount < 10)
+    .map((planet) => planet.name)
+
 }
 
 // === TEST YOURSELF ===

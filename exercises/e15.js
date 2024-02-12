@@ -4,12 +4,9 @@
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetsWithNoMoons(data) {
-  const noMoonPlanets = [];
-  data.planets.map(function (planets) {
-    if (planets.moonsCount == null)
-      noMoonPlanets.push(planets.name)
-  })
-  return noMoonPlanets;
+  return data.planets
+    .filter((planets) => planets.moonsCount == null)
+    .map((planets) => planets.name)
 }
 
 
