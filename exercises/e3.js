@@ -1,14 +1,11 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 3
 // Return an array of all Planets' average temperatures
 // Return example: [1, 2, ... , N]
 
 export function getAllAverageTemperatures(data) {
-  const avTemp = data.planets.map(function (planets) {
-    return planets.avgTemp;
-  })
-  return avTemp;
+  return data.planets.map((planets) => planets.avgTemp)
+
 }
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"

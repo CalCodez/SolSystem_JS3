@@ -1,15 +1,11 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 1
 // Return an array of all Planets' names
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetNames(data) {
-  // Your code goes here...
-  const planName = data.planets.map(function (planets) {
-    return planets.name
-  })
-  return planName;
+
+  return data.planets.map((planets) => planets.name);
 }
 
 

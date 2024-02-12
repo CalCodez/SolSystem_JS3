@@ -1,4 +1,3 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 15
 // Return an array of Planets' names without moons

@@ -1,4 +1,3 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 14
 // Return the sum of orbital periods of all asteroids

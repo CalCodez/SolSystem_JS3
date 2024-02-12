@@ -1,17 +1,12 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 6
 // Return an array with all asteroids names discovered after a given year
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getAsteroidsDiscoveredAfterYear(data, year) {
-  const disYear = [];
-
-  data.asteroids.map(function (asteroids) {
-    if (asteroids.discoveryYear > year)
-      disYear.push(asteroids.name)
-  })
-  return disYear;
+  return data.asteroids
+    .filter((asteroids) => asteroids.discoveryYear > year)
+    .map((asteroids) => asteroids.name);
 }
 
 

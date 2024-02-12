@@ -1,4 +1,3 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 9
 // Return the data object of the planet "Earth"

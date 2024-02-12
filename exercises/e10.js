@@ -1,4 +1,3 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 10
 // Return a given asteroid object of data

@@ -1,20 +1,17 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 7
 // Return an array of all Planets names that have moons
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetsNamesWithMoons(data) {
-  const planetHasMoon = [];
+  return data.planets
+    .filter((planet) => planet.moons > 1)
+    .map((planet) => planet.name);
 
-  data.planets.map(function (planets) {
-    if (planets.moonsCount >= 1)
-      planetHasMoon.push(planets.name);
-  })
-  return planetHasMoon;
+  //return data.asteroids
+  //  .filter((asteroids) => asteroids.discoveryYear >= year)
+  //  .map((asteroids) => asteroids.name);
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-7"

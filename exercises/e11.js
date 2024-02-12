@@ -1,4 +1,3 @@
-import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 11
 // Return an array of Planets' names with less than 10 moons
